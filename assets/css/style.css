@@ -63,6 +63,10 @@ html {
 	width: 60%;
 }
 
+#banner .image img {
+	width: 100%;
+}
+
 #banner .content {
 	display: flex;
 	align-items: center;
