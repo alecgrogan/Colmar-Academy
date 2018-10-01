@@ -193,3 +193,66 @@ html {
 		width: 100%;
 	}
 }
+
+/* COURSES */
+#courses {
+	padding: 2rem 3.5rem;
+	background-color: rgb(245, 245, 245);
+}
+
+#courses .row {
+	display: flex;
+}
+
+#courses .course {
+	flex-basis: 33%;
+	margin: 1rem;
+	background-color: #fff;
+}
+
+#courses .course .media {
+	overflow: hidden;
+}
+
+#courses .course .media img {
+	display: block;
+	width: 100%;
+}
+
+#courses .course .text {
+	padding: 1rem 1rem 1.5rem 1rem;
+}
+
+#courses .course h3,
+#courses .course h4 {
+	padding-bottom: .5rem;
+}
+
+@media only screen and (max-width: 768px) {
+	#courses {
+		padding: 2rem 1rem;
+		background-color: inherit;
+	}
+
+	#courses .row {
+		flex-direction: column;
+	}
+
+	#courses .course {
+		margin: .25rem 0;
+	}
+
+	#courses .course .text {
+		background-color: rgb(216, 216, 216);
+	}
+
+	#courses .course h3 {
+		padding-bottom: 0;
+	}
+
+	#courses .course .media,
+	#courses .course h4,
+	#courses .course p {
+		display: none;
+	}
+}
