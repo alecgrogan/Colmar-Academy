@@ -1,5 +1,5 @@
 /* FONTS */
-/* FiraSans*/
+/* FiraSans */
 @font-face {
 	font-family: 'FiraSans-Regular';
 	src: url(../fonts/FiraSans-Regular.ttf);
@@ -15,6 +15,12 @@
 	src: url(../fonts/FiraSans-SemiBold.ttf);
 }
 
+/* Merriweather */
+@font-face {
+	font-family: 'Merriweather-Regular';
+	src: url(../fonts/Merriweather-Regular.ttf);
+}
+
 /* GENERAL */
 html {
 	font-size: 16px;
@@ -23,6 +29,15 @@ html {
 h1 {
 	font-family: 'FiraSans-Regular';
 	font-size: 1.5rem;
+}
+
+h3 {
+	font-family: 'FiraSans-Bold';
+	font-size: 1.5rem;
+}
+
+p {
+	font-family: 'Merriweather-Regular';
 }
 
 .special {
@@ -92,6 +107,7 @@ h1 {
 }
 
 #banner .image {
+	width: 60%;
 	border-right: none;
 	overflow: hidden;
 	margin: 2rem 1.5rem;
@@ -102,12 +118,15 @@ h1 {
 }
 
 #banner .content {
+	display: flex;
+	width: 40%;
+	flex-direction: column;
 	justify-content: center;
 }
 
 #banner h3 {
 	padding-bottom: 2rem;
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 #banner p {
@@ -115,8 +134,16 @@ h1 {
 }
 
 #banner a {
+	font-family: 'FiraSans-Regular';
 	padding: .5rem 0;
-	text-align: center;
+	font-size: 1rem;
+	color: #fff;
+	background-color: #DC143C;
+	width: 400px;
+}
+
+#banner a:hover {
+	color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -127,6 +154,10 @@ h1 {
 
 	#banner .image {
 		width: auto;
+		margin: 0;
+	}
+
+	#banner .image img {
 		padding: 0;
 	}
 
@@ -139,7 +170,10 @@ h1 {
 /* INFORMATION */
 #info {
 	display: flex;
-	padding: 0 1.5rem;
+}
+
+#info .left {
+	width: 60%;
 }
 
 #info .left h3 {
@@ -149,12 +183,18 @@ h1 {
 }
 
 #info .right {
+	width: 40%;
 	justify-content: space-between
+}
+
+#info .media img {
+	width: 100%;
+	margin: 2rem 1.5rem;
 }
 
 #info .content-box {
 	display: flex;
-	padding: 1rem 0 1rem 1rem;
+	
 	border-bottom: 1px solid rgb(245, 245, 245);
 }
 
