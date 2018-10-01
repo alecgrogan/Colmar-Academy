@@ -1,6 +1,6 @@
 /* GENERAL */
 html {
-	background-color: #000;
+	font-size: 16px;
 }
 
 /* NAVIGATION */
@@ -32,7 +32,6 @@ html {
 	display: none;
 }
 
-/* Mobile responsive design */
 @media only screen and (max-width: 768px) {
 	.brand {
 		display: none;
@@ -81,7 +80,6 @@ html {
 	text-align: center;
 }
 
-/* Mobile responsive design */
 @media only screen and (max-width: 768px) {
 	#banner {
 		padding: 0;
@@ -96,5 +94,102 @@ html {
 	#banner .content {
 		padding: 2rem 1rem;
 		width: auto;
+	}
+}
+
+/* INFORMATION */
+#info {
+	display: flex;
+	padding: 0 1.5rem;
+}
+
+#info .left h3 {
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
+	font-size: 1.5rem;
+}
+
+#info .right {
+	justify-content: space-between
+}
+
+#info .content-box {
+	display: flex;
+	padding: 1rem 0 1rem 1rem;
+	border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+#info .content-box:first-child {
+	padding-top: 0;
+}
+
+#info .content-box:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+#info .content-box .media {
+	width: 35%;
+}
+
+#info .content-box .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 65%;
+	padding: 0 0.75rem 0 1rem;
+}
+
+#info .content-box h4 {
+	padding-bottom: .5rem;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+#info .content-box p {
+	padding-bottom: .5rem;
+}
+
+#info .content-box .mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	#info {
+		padding: 0 1rem; 
+	}
+
+	#info .left {
+		display: none;
+	}
+
+	#info .right {
+		width: 100%;
+	}
+
+	#info .right .content-box {
+		flex-direction: column;
+	}
+
+	#info .text {
+		max-width: 14rem;
+		padding: 1rem;
+	}
+
+	#info .content-box .desktop {
+		display: none;
+	}
+
+	#info .content-box .mobile {
+		display: block;
+	}
+
+	#info .content-box {
+		padding-left: 0;
+		border-bottom: none;
+	}
+
+	#info .content-box .media {
+		width: 100%;
 	}
 }
