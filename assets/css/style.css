@@ -256,3 +256,132 @@ html {
 		display: none;
 	}
 }
+
+/* THESIS */
+#thesis {
+	padding: 2rem 0;
+}
+
+#thesis .container {
+	display: flex;
+	padding: 0 1.5rem;
+}
+
+#thesis .container h3 {
+	padding: .5rem 0;
+}
+
+#thesis .container .focus-content {
+	width: 60%;
+	padding: 2rem 1.5rem 0 0;
+	border-right: 1px solid rgb(255, 255, 255);
+}
+
+#thesis .container .focus-content .media {
+	overflow: hidden;
+}
+
+#thesis .container .focus-content .media video {
+	display: block;
+	width: 100%;
+}
+
+#thesis .container .secondary-content {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	padding: 2rem 0;
+}
+
+#thesis .container .content-box {
+	display: flex;
+	padding: 1rem 0 1rem 1rem;
+	border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+#thesis .container .content-box h4 {
+	padding-bottom: .5rem;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+#thesis .container .content-box p {
+	padding-bottom: .5rem;
+}
+
+#thesis .container .content-box:first-child {
+	padding-top: 0;
+}
+
+#thesis .container .content-box:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+#thesis .container .content-box .media {
+	width: 35%;
+}
+
+#thesis .container .content-box .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 65%;
+	padding: 0 0.75rem 0 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+	#thesis .container .content-box {
+		padding-left: 0;
+		border-bottom: none;
+	}
+
+	#thesis .container .content-box .media {
+		width: 100%;
+	}
+
+	#thesis .focus-content h3,
+	#thesis .focus-content p,
+	#thesis .secondary-content,
+	#thesis .content-box {
+		display: none;
+	}
+
+	#thesis {
+		padding-bottom: 1.5rem;
+	}
+
+	#thesis .container {
+		padding: 0;
+	}
+
+	#thesis .focus-content {
+		width: 100%;
+		padding: 0;
+		margin-right: 0;
+	}
+}
+
+/* FOOTER */
+#footer {
+	display: flex;
+	padding: 1rem 1.5rem;
+}
+
+#footer .copyright {
+	flex-grow: 1;
+}
+
+#footer a {
+	margin-right: .75rem;
+}
+
+#footer a:last-child {
+	margin-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	#footer a {
+		display: none;
+	}
+}
