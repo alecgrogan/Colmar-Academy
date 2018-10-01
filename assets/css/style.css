@@ -1,6 +1,33 @@
+/* FONTS */
+/* FiraSans*/
+@font-face {
+	font-family: 'FiraSans-Regular';
+	src: url(../fonts/FiraSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'FiraSans-Bold';
+	src: url(../fonts/FiraSans-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'FiraSans-SemiBold';
+	src: url(../fonts/FiraSans-SemiBold.ttf);
+}
+
 /* GENERAL */
 html {
 	font-size: 16px;
+}
+
+h1 {
+	font-family: 'FiraSans-Regular';
+	font-size: 1.5rem;
+}
+
+.special {
+	font-family: 'FiraSans-Bold';
+	color: #DC143C;
 }
 
 /* NAVIGATION */
@@ -10,6 +37,7 @@ html {
 	background-color: #fff;
 	display: flex;
 	justify-content: space-between;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .brand {
@@ -25,7 +53,14 @@ html {
 }
 
 .menu li {
+	font-family: 'FiraSans-Regular';
 	margin-left: 16px;
+}
+
+.menu li:hover {
+	padding-bottom: 2px;
+	border-bottom: 2px solid #DC143C;
+	font-family: 'FiraSans-SemiBold';
 }
 
 .truncated-menu {
@@ -54,12 +89,16 @@ html {
 #banner {
 	background-color: rgb(219, 219, 219);
 	display: flex;
-	padding: 0 1.5rem;
 }
 
 #banner .image {
 	border-right: none;
 	overflow: hidden;
+	margin: 2rem 1.5rem;
+}
+
+#banner .image img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #banner .content {
