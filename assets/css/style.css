@@ -53,42 +53,48 @@ html {
 
 /* BANNER */
 #banner {
-	background-color: lightgray;
-	width: 100%;
+	background-color: rgb(219, 219, 219);
 	display: flex;
+	padding: 0 1.5rem;
 }
 
 #banner .image {
-	margin: 32px 24px;
-	width: 60%;
-}
-
-#banner .image img {
-	width: 100%;
+	border-right: none;
+	overflow: hidden;
 }
 
 #banner .content {
-	display: flex;
-	align-items: center;
+	justify-content: center;
+}
+
+#banner h3 {
+	padding-bottom: 2rem;
+	font-size: 2rem;
+}
+
+#banner p {
+	padding-bottom: 1.5rem;
+}
+
+#banner a {
+	padding: .5rem 0;
+	text-align: center;
 }
 
 /* Mobile responsive design */
 @media only screen and (max-width: 768px) {
 	#banner {
-		display: flex;
+		padding: 0;
 		flex-direction: column; 
 	}
 
 	#banner .image {
-		margin: 0;
-		width: 100%;
+		width: auto;
+		padding: 0;
 	}
 
-	.truncated-menu {
-		width: 100%;
-		height: 64px;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
+	#banner .content {
+		padding: 2rem 1rem;
+		width: auto;
 	}
 }
