@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 895px) {
 	#info {
 		padding: 0 1rem;
 	}
@@ -24,7 +24,7 @@
 		display: none;
 	}
 
-	#info .content-box .mobile {
+	#info .secondary-content .content-box .mobile {
 		display: block;
 	}
 
@@ -42,9 +42,9 @@
 		width: 100%;
 	}
 
-	#thesis .focus-content h3,
-	#thesis .focus-content p,
-	#thesis .secondary-content {
+	#thesis .flex .focus-content h3,
+	#thesis .flex .focus-content p,
+	#thesis .flex .secondary-content {
 		display: none;
 	}
 
