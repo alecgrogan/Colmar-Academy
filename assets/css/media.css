@@ -1,0 +1,64 @@
+@media only screen and (max-width: 768px) {
+	#info {
+		padding: 0 1rem;
+	}
+
+	#info .focus-content {
+		display: none;
+	}
+
+	#info .secondary-content {
+		width: 100%;
+	}
+
+	#info .secondary-content .content-box {
+		flex-direction: column;
+	}
+
+	#info .text {
+		max-width: 14rem;
+		padding: 1rem;
+	}
+
+	#info .content-box .desktop {
+		display: none;
+	}
+
+	#info .content-box .mobile {
+		display: block;
+	}
+
+	#info .content-box {
+		padding-left: 0;
+	}
+
+	#info .content-box .media {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.flex .content-box .media {
+		width: 100%;
+	}
+
+	#thesis .focus-content h3,
+	#thesis .focus-content p,
+	#thesis .secondary-content {
+		display: none;
+	}
+
+	#thesis {
+		padding-bottom: 1.5rem
+	}
+
+	#thesis .flex {
+		padding: 0;
+	}
+
+	#thesis .focus-content {
+		width: 100%;
+		padding: 0;
+		margin-right: 0;
+	}
+}
