@@ -1,3 +1,42 @@
+@media only screen and (max-width: 768px) {
+	.brand {
+		display: none;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.truncated-menu {
+		width: 100%;
+		height: 64px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#banner {
+		padding: 0;
+		flex-direction: column; 
+	}
+
+	#banner .image {
+		width: auto;
+		margin: 0;
+	}
+
+	#banner .image img {
+		padding: 0;
+	}
+
+	#banner .content {
+		padding: 2rem 1rem;
+		width: auto;
+	}
+}
+
 @media only screen and (max-width: 895px) {
 	#info {
 		padding: 0 1rem;
@@ -5,14 +44,20 @@
 
 	#info .focus-content {
 		display: none;
+		width: 0;
 	}
 
 	#info .secondary-content {
 		width: 100%;
+		margin: 0;
+		padding: 0;
 	}
 
 	#info .secondary-content .content-box {
 		flex-direction: column;
+		width: 100%;
+		padding: 0;
+		margin: 0;
 	}
 
 	#info .text {
@@ -26,6 +71,11 @@
 
 	#info .secondary-content .content-box .mobile {
 		display: block;
+		width: 100%;
+	}
+
+	#info .secondary-content .content-box .media {
+		width: 100%;
 	}
 
 	#info .content-box {
@@ -34,6 +84,39 @@
 
 	#info .content-box .media {
 		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#courses {
+		padding: 2rem 1rem;
+		background-color: #333;
+	}
+
+	#courses .row {
+		flex-direction: column;
+	}
+
+	#courses .course {
+		margin: .25rem 0;
+	}
+
+	#courses .course .text {
+		background-color: #fff;
+	}
+
+	#courses .course .text:hover {
+		background-color: #DC143C;
+	}
+
+	#courses .course h3 {
+		padding-bottom: 0;
+	}
+
+	#courses .course .media,
+	#courses .course h4,
+	#courses .course p {
+		display: none;
 	}
 }
 
@@ -48,17 +131,45 @@
 		display: none;
 	}
 
+	#thesis .flex .focus-content {
+		width: 100%;
+	}
+
 	#thesis {
 		padding-bottom: 1.5rem
 	}
 
 	#thesis .flex {
-		padding: 0;
+		padding-top: 0.5rem;
+	}
+
+	#thesis .h2 {
+		padding-bottom: 0.5rem;
+	}
+
+	#thesis .lex .focus-content .media video {
+		width: 100%;
+		padding-bottom: 0;
+	}
+
+	#thesis .flex .secondary-content {
+		width: 0;
 	}
 
 	#thesis .focus-content {
 		width: 100%;
 		padding: 0;
 		margin-right: 0;
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#footer a {
+		display: none;
+	}
+
+	#footer {
+		padding: 2.5rem 0 1rem 1.5rem;
 	}
 }
